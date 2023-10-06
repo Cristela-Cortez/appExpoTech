@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana , sans-serif;
+}
+h1{
+	text-align: center;
+	padding-bottom: 15px;
+}
+h4{
+	text-align: center;
+	padding-bottom: 3px;
+}
+
+header{
+	width: 100%;
+}
+
+nav{
+	margin: 20px auto;
+	width: 90%;
+	max-width: 1000px;
+}
+nav ul{
+	list-style: none;
+	display: table;
+	width: 50%;
+	overflow: hidden;
+	position: relative;
+	
+}
+nav > ul li a{
+	color: black ;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li > ul > li >:hover{
+	background: #5da5a2;
+}
+nav > ul > li > a span{
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li > a span .icon{
+	display: block;
+	line-height: 60px;
+}
+nav > ul > li > a:hover > span{
+	top: 0;
+
+}
+.caja{
+	text-align: center;
+	border: 2px solid gold; /* Grosor y color del borde */
+  	padding: 10px 15px 10px 15px; /* Espacio interno para el contenido */
+  	width: 30%;
+  	margin-left: 34%;
+
+}
+.boton{
+	text-decoration: none;
+	background-color: cornflowerblue;
+	border: 2px solid blue ;
+	text-align: center;
+	color: white;
+	border-radius: 30px;
+	padding: 20px 40px;
+	margin-left: 40%;
+}
+input{
+	padding: 15px;
+	background-color: lightblue;
+	border-radius: 5px;
+	margin-left: 43%;
+
+}
+table{
+	border-collapse: collapse;
+	margin-left: 30%;
+
+}
+td{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+/* Estilos para cada fila */
+        .fila-1 {
+            background-color:#F4BE84;
+        }
+
+        .fila-2 {
+            background-color:#ABF5D2 ;
+        }
+
+        .fila-3 {
+            background-color:#F5FA8C ;
+        }
+th{
+	padding: 25px;
+
+}
+.tabla2 td{
+	width: 70px;
+	height: 45px;
+}
