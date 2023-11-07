@@ -17,7 +17,7 @@ document.getElementById("enviarRegistro").addEventListener("click", function(e) 
 				 setTimeout(window.location.href = "login.html", 5000); }
 		          
 		    })  
-} else if (window.location.href.includes("index.html")) {
+} else if (window.location.href.includes("login.html")) {
 
 document.getElementById('enviar').addEventListener('click', function(e){
 	e.preventDefault();
@@ -36,7 +36,7 @@ document.getElementById('enviar').addEventListener('click', function(e){
 	}
 
 })
-} else if (window.location.href.includes("main.html")) {
+} else if (window.location.href.includes("index.html")) {
 	var ingresos = 0
 	const showSaldoRestante= document.getElementById('showSaldoRestante')
 	
