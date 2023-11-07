@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pagina Principal</title>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	  <style type="text/css">
+	  	.icon-container img {
+    width: 32px; /* Ancho deseado en píxeles */
+    height: 32px; /* Alto deseado en píxeles */
+}
+
+	body {
+                background: url('img/backpack.png') no-repeat center center fixed;
+                background-size: cover;
+            }
+			@media (max-width: 1200px) {
+   
+    .container {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 30px;
+    }
+    .container {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 25px;
+    }
+    .container {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 20px;
+    }
+    .container {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 20px) {
+.form-control{
+                font-size: 35px;
+                padding: 15px;
+                border-radius: 5px;
+
+            }}
+ .fas{
+ 	 transition: transform 0.3s
+ }
+
+ .fas:hover{
+ 	 transform: scale(1.1);
+ }
+ #tablaCategorias th{
+ 	text-align: center;
+ }
+ 
+ .progress-bar {
+            width: 0;
+            height: 30px;
+            background-color: #007bff;
+            transition: width 0.3s;
+        }
+        </style>
+</head>
+<body>
+	<div class="container">
+
+		<br>
+		<div class="icon-container">
+		<a href="login.html"> <img class="fas" src="log-out-svgrepo-com.svg" alt="Log out"></a>
+	</div><br><center><p class="top">BUDGET RECORD</p></center>
+		<center><h3>Control de Gastos</h3></center>
+
+<table class="table">
+	<tr><br>
+		<td>Ingresos:</td>
+		<td id="showIngresos"></td>
+	</tr>
+</table>
+
+<div id="contenedorIngresos">
+<form action="" method="post" id="formIngresos">  
+						<div class="form-group">
+							
+<input type="number" name="number" id="ingresos" class="form-control" required placeholder="Ingresos" /><br> 
+		<center><input type="submit" name="submit" id="enviarIngreso" class="btn btn-primary" value="Submit"></center>
+						</div>  
+</form>
+</div>
+
+<table class="table">
+	<tr><br>
+		<td>Gastos:</td>
+		<td id="totalGastos"></td>
+	</tr>
+	<tr>
+		<td>Tu balance</td>
+		<td id="showSaldoRestante"></td>
+	</tr>
+</table>
+
+
+
+<div id="contenedorGastos">
+<form action="" method="post" id="gastosForm">  
+						<div class="form-group">  
+							 <select id="gasto" name="gasto" required class="form-control" ><br>
+					            <option value="agua">Agua</option>
+					            <option value="electricidad" >Electricidad</option>
+					            <option value="viaticos">Viaticos</option>
+					            <option value="comida">Comida</option>
+					            <option value="internet">Internet</option>
+					            <option value="alquiler">Alquiler</option>
+					             <option value="educacion">Educación</option>
+					            <option value="deudas">Deudas</option>
+					            <option value="medicina">Medicina</option>
+					            <option value="salon">Salón de Belleza</option>
+					            <option value="carro">Mantenimiento del carro</option>
+					            <option value="gasolina">Gasolina</option>
+					            <option value="mascota">Mascota</option>
+					            <option value="recreacion">Recreación</option>
+					            <option value="ahorro">Ahorro</option>
+					             <option value="otros">Otros</option>
+
+      						  </select><br>
+
+      						  <input type="number" name="number" id="monto" class="form-control" required placeholder="Gastos" /> <br> 
+
+						<center>	<input type="submit" name="submit" id="enviarIngreso" class="btn btn-primary" value="Submit"> </center>
+						</div>  
+</form>
+</div >
+
+		<table id="tablaCategorias" class="table-bordered" width="100%">
+				<tr>
+					<th width="25%">Gasto</th>
+					<th width="25%">Monto</th>
+					<th width="50%">Grafico</th>
+				</tr>
+				
+		</table><br><br>
+		
+
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
