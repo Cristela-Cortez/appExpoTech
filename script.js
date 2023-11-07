@@ -1,6 +1,3 @@
-var ingresos = 0
-	const showSaldoRestante= document.getElementById('showSaldoRestante')
-
 
 
 if (window.location.href.includes("register.html")){
@@ -40,6 +37,8 @@ document.getElementById('enviar').addEventListener('click', function(e){
 
 })
 } else if (window.location.href.includes("main.html")) {
+	var ingresos = 0
+	const showSaldoRestante= document.getElementById('showSaldoRestante')
 	
 		document.getElementById('enviarIngreso').addEventListener("click", function (e){
 			e.preventDefault();
