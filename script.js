@@ -20,7 +20,7 @@ document.getElementById("enviarRegistro").addEventListener("click", function(e) 
 				 setTimeout(window.location.href = "login.html", 5000); }
 		          
 		    })  
-} else if (window.location.href.includes("login.html")) {
+} else if (window.location.href.includes("index.html")) {
 
 document.getElementById('enviar').addEventListener('click', function(e){
 	e.preventDefault();
