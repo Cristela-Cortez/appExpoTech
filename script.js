@@ -30,7 +30,7 @@ document.getElementById('enviar').addEventListener('click', function(e){
 		window.location.href = "main.html"
 	}
 	else{
-		if ( (emailLogin!="cristela.cortez@outlook.com" &&  passLogin == "holamundo000")|| (passLogin != "holamundo000" && emailLogin=="cristela.cortez@outlook.com")) {
+		if ( (emailLogin!="budget@record.expotech" &&  passLogin == "12345")|| (passLogin != "12345" && emailLogin=="budget@record.expotech")) {
 			alert('Una de sus credenciales es incorrecta')
 		}
 		else{
