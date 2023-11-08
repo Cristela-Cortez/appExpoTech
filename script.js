@@ -16,7 +16,7 @@ document.getElementById("enviarRegistro").addEventListener("click", function(e) 
 
 			}
 			if (passRegistro == confirmPass && !isBlank(confirmPass)){
-				alert('Sus credenciales han sido guardadas correctamente')
+				alert('Sus credenciales han sido guardadas correctamente');
 				 setTimeout(window.location.href = "login.html", 5000); }
 		          
 		    })  
@@ -27,14 +27,14 @@ document.getElementById('enviar').addEventListener('click', function(e){
 	var emailLogin= document.getElementById('emailLogin').value;
 	var passLogin = document.getElementById('passLogin').value;
 	if (emailLogin=="budget@record.expotech" && passLogin== "12345") {
-		window.location.href = "main.html"
+		window.location.href = "main.html";
 	}
 	else{
 		if ( (emailLogin!="cristela.cortez@outlook.com" &&  passLogin == "holamundo000")|| (passLogin != "holamundo000" && emailLogin=="cristela.cortez@outlook.com")) {
-			alert('Una de sus credenciales es incorrecta')
+			alert('Una de sus credenciales es incorrecta');
 		}
 		else{
-			alert('Ese usuario y esa contraseña no existe')
+			alert('Ese usuario y esa contraseña no existe');
 			}
 	}
 
@@ -44,9 +44,9 @@ document.getElementById('enviar').addEventListener('click', function(e){
 		document.getElementById('enviarIngreso').addEventListener("click", function (e){
 			e.preventDefault();
 			
-			ingresos += parseFloat(document.getElementById('ingresos').value)
+			ingresos += parseFloat(document.getElementById('ingresos').value);
 			document.getElementById('showIngresos').innerHTML= '$'+ingresos;
-			document.getElementById('ingresos').value= ""
+			document.getElementById('ingresos').value= "";
 			//document.getElementById('contenedorIngresos').style.display= "none";
 				var saldoRestante= ingresos-totalGastos;
 			showSaldoRestante.innerHTML="$"+saldoRestante;
@@ -68,17 +68,17 @@ document.getElementById('enviar').addEventListener('click', function(e){
 		let porcentaje= (monto/ingresos)* 100 + "%";
 
 		//asignar color random
-		let colores=["#257e1a", "#3d952f", "#6ec35b", "#55ac45", "#86da71", "#176e13", "#2e8226", "#005a00", "#39c222", "#26b017"  ]
-		var numeroRandom = Math.floor(Math.random() * 11)
-		var color= colores[numeroRandom]
+		let colores=["#257e1a", "#3d952f", "#6ec35b", "#55ac45", "#86da71", "#176e13", "#2e8226", "#005a00", "#39c222", "#26b017"  ];
+		var numeroRandom = Math.floor(Math.random() * 11);
+		var color= colores[numeroRandom];
 
             //crear nueva fila y celdas
 		var newRow= document.createElement('tr');
 		var newCategoria = document.createElement('td');
 		var newMonto= document.createElement('td');
-		var newGrafico= document.createElement('td')
-		var newProgress= document.createElement('div')
-		var newBar= document.createElement('div')
+		var newGrafico= document.createElement('td');
+		var newProgress= document.createElement('div');
+		var newBar= document.createElement('div');
 
 		//agregar datos a la celda
 		newCategoria.textContent= nombreCategoria;
@@ -86,12 +86,12 @@ document.getElementById('enviar').addEventListener('click', function(e){
 		
 
          //clases barra
-         newProgress.classList.toggle("progress")  
-         newBar.classList.toggle('progress-bar')
+         newProgress.classList.toggle("progress");  
+         newBar.classList.toggle('progress-bar');
          newBar.style.width= porcentaje;
          newBar.style.backgroundColor= color; 
-         newProgress.appendChild(newBar)
-         newGrafico.appendChild(newProgress)
+         newProgress.appendChild(newBar);
+         newGrafico.appendChild(newProgress);
 
 		
 		//agregar las celdas a la fila
