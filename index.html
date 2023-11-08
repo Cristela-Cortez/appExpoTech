@@ -1,0 +1,69 @@
+<!DOCTYPE html>  
+<html lang="en"> 
+	<head>  
+		<meta charset="UTF-8">  
+		<title>Login</title>  
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+		<style>
+			body {
+				background: url('img/background.jpeg') no-repeat center center fixed;
+				background-size: cover;
+			}
+
+			.container {
+				margin-top: 100px;
+			}
+
+			@media (max-width: 768px) {
+				.container {
+					margin-top: 50px;
+				}
+			}
+			body{
+				font-family: sans-serif;
+				
+				
+			}
+			.btn-primary{
+				font-size: 50px;
+				border-radius: 5px;
+			}
+			.form-control{
+				font-size: 50px;
+				padding: 15px;
+				border-radius: 5px;
+			}
+			.form-group{
+				font-size: 200%;
+			}
+			#enviar{
+				font-size: 150%;
+			}
+
+		</style>
+	</head>  
+	<body>  
+		<div class="container">  
+			<div class="row">  
+				<div class="col-md-12"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+					<form action="" method="post">  
+						<div class="form-group">  
+							<label>Email Address</label>  
+							<input type="email" name="email" class="form-control" id="emailLogin" required />  
+						</div>  
+						<div class="form-group">  
+							<label>Password</label>  
+							<input type="password" id="passLogin" name="password" class="form-control" required>  
+						</div>  
+						<div class="form-group">  <br><br>
+							<center><input type="submit" id="enviar" name="submit" class="btn-primary" value="Submit"></center>
+						</div>  
+						 
+					</form>  
+				</div> 
+			</div>  
+		</div> 
+		<script type="text/javascript" src="script.js"></script>
+	</body>  
+</html>
