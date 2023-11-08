@@ -1,5 +1,5 @@
-var ingresos = 0
-	const showSaldoRestante= document.getElementById('showSaldoRestante')
+var ingresos = 0;
+	const showSaldoRestante= document.getElementById('showSaldoRestante');
 
 
 
